@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('vendors_bank_detailss', function (Blueprint $table) {
+        Schema::create('vendors_bank_details', function (Blueprint $table) {
             $table->id();
             $table->string('vendor_id');
             $table->string('account_holder_name');
@@ -27,6 +27,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('vendors_bank_detailss');
+        Schema::dropIfExists('vendors_bank_details');
     }
 };
